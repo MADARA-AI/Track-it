@@ -1,6 +1,7 @@
 {
-  "name": "client",
-  "version": "0.1.0",
+  "name": "trackit-platform-client",
+  "version": "1.0.0",
+  "description": "Legacy React frontend for TrackIt - Career Learning & Roadmap Platform",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
