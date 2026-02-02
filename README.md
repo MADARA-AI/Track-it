@@ -1,73 +1,132 @@
-# Welcome to your Lovable project
+# 🚀 TrackIt - Career Learning & Roadmap Platform
 
-## Project info
+TrackIt is a comprehensive full-stack educational platform designed to help professionals and students navigate their career paths. It provides curated learning roadmaps, interactive courses, and personalized recommendations to streamline the journey from beginner to expert.
 
-**URL**: https://lovable.dev/projects/a3e0bcc2-3af3-43ed-b0e9-df130e029e4c
+![License](https://img.shields.io/github/license/MADARA-AI/web-backend-bridge)
+![JavaScript](https://img.shields.io/badge/language-JavaScript-yellow)
+![React](https://img.shields.io/badge/frontend-React-blue)
+![Express](https://img.shields.io/badge/backend-Express-lightgrey)
+![MongoDB](https://img.shields.io/badge/database-MongoDB-green)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Key Features
 
-**Use Lovable**
+- **🗺️ Interactive Roadmaps**: Visual guides for various domains including Web Development and OSINT (Open Source Intelligence).
+- **📚 Course Catalog**: A library of structured courses with difficulty levels, durations, and instructor details.
+- **🎯 Career Recommendations**: AI-driven or rule-based suggestions to help users choose their next learning milestone.
+- **🔐 Secure Authentication**: Complete user management system including Sign Up, Login, Password Reset, and Code Verification.
+- **👤 User Profiles**: Personalized dashboards to track progress and manage account settings.
+- **💳 Integrated Checkout**: Secure payment processing for premium courses via PayPal.
+- **🔍 Global Search**: Find tools, courses, and roadmap nodes easily across the platform.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a3e0bcc2-3af3-43ed-b0e9-df130e029e4c) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+### Frontend
+- **Framework**: [React](https://react.dev/) (v18/v19)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/), [Styled Components](https://styled-components.com/), [shadcn/ui](https://ui.shadcn.com/)
+- **State Management**: [TanStack Query](https://tanstack.com/query/latest)
+- **Routing**: [React Router Dom](https://reactrouter.com/)
+- **Icons**: [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Backend
+- **Runtime**: [Node.js](https://nodejs.org/) / [Bun](https://bun.sh/)
+- **Server**: [Express.js](https://expressjs.com/)
+- **Database**: [MongoDB](https://www.mongodb.com/) via [Mongoose](https://mongoosejs.com/)
+- **Middleware**: CORS, JSON Parsing
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📂 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```text
+├── client/              # React frontend (CRA bootstrapped)
+│   ├── src/
+│   │   ├── components/  # Reusable UI components (Auth, Pages, etc.)
+│   │   ├── Style/       # CSS and styling files
+│   │   └── App.js       # Main routing logic
+├── server/              # Express backend
+│   ├── models/          # Mongoose schemas (User, etc.)
+│   ├── routes/          # API endpoints
+│   ├── DB/              # Database connection logic
+│   └── server.js        # Entry point
+├── src/                 # Root-level Vite/Shadcn components (if applicable)
+└── package.json         # Workspace configuration
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Getting Started
 
-**Use GitHub Codespaces**
+### Prerequisites
+- Node.js (v18 or higher)
+- MongoDB account (Atlas or Local)
+- Bun (optional, but recommended for root tasks)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/MADARA-AI/web-backend-bridge.git
+cd web-backend-bridge
+```
 
-## What technologies are used for this project?
+### 2. Setup the Server
+```bash
+cd server
+npm install
+```
+Create a `.env` file in the `server` directory:
+```env
+PORT=5000
+DB=your_mongodb_connection_string
+```
+Start the server:
+```bash
+npm start
+```
 
-This project is built with:
+### 3. Setup the Client
+```bash
+cd ../client
+npm install
+npm start
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The application should now be running at `http://localhost:3000`.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/a3e0bcc2-3af3-43ed-b0e9-df130e029e4c) and click on Share -> Publish.
+## 🔧 Environment Variables
 
-## Can I connect a custom domain to my Lovable project?
+The server requires the following variables to function correctly:
 
-Yes, you can!
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `PORT`   | Port the server runs on | `5000` |
+| `DB`     | MongoDB Connection String | `REQUIRED` |
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🤝 Contributing
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📝 License
+
+Distributed under the ISC License. See `LICENSE` for more information.
+
+---
+
+## 👤 Author
+
+**MADARA-AI**
+- GitHub: [@MADARA-AI](https://github.com/MADARA-AI)
+
+*Developed with ❤️ as part of the TrackIt Learning ecosystem.*
